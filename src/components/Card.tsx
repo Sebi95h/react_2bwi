@@ -11,6 +11,7 @@ export default function Card({}: Props) {
       />
       <p>Bank Spieler</p>
       <p>Marko Roskic</p>
+    
     </div>
   );
 }

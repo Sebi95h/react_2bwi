@@ -1,16 +1,16 @@
-import styles from "./Card.module.css";
-type Props = {};
+import styles from "../Card.module.css";
+type Props = {
+  title: string;
+  text: string;
+  image: string;
+};
 
-export default function Card({}: Props) {
+export default function Card({ title, text, image }: Props) {
   return (
     <div className={styles.card}>
-      <h2>Fußball</h2>
-      <img
-        src="https://www.oefb.at/oefb2/images/1278650591628556536_be38562af999a8e38179-1,0-320x320.png"
-        alt="Philip Kurtovic"
-      />
-      <p>"Neuer R9"</p>
-      <p>Philip Kurtovic</p>
+      <h2>{title}</h2>
+      <img src={image} alt={title} />
+      <p>{text}</p>
     </div>
   );
 }

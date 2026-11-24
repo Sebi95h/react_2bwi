@@ -1,7 +1,10 @@
-type Props = {}
+import styles from "../App.module.css";
 
-export default function Header({}: Props) {
+export default function Header() {
   return (
-    <div>Header</div>
-  )
+    <header className={styles.header}>
+      <h1>Test</h1>
+      <span className={styles.headerBadge}>0</span>
+    </header>
+  );
 }

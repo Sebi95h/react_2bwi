@@ -1,15 +1,55 @@
-h1{
-    font-size: 3rem;
-    font-weight: bold;
-  
+.card {
+  width: 212px;
+  min-height: 499px;
+  flex: 0 0 212px;
+  padding: 16px 14px 14px;
+  border: 1px solid #bbb;
+  border-radius: 12px;
+  background: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 4%);
 }
 
-.card{
-    img{
-    width: 200px;
-    height: 300px;
+.card h2 {
+  margin: 0 0 14px;
+  font-size: 22px;
+  line-height: 1.2;
 }
-    border: 1px solid Black;
-    border-radius: 12px;
-    padding: 1rem;
+
+.card img {
+  display: block;
+  width: 182px;
+  height: 306px;
+  object-fit: cover;
+  border: 0;
+  background: #e8e8e8;
+}
+
+.card p {
+  margin: 16px 0 0;
+  font-size: 13px;
+  line-height: 1.25;
+}
+
+.card p + p {
+  margin-top: 12px;
+  min-height: 18px;
+  font-weight: 700;
+}
+
+.changeImage {
+  margin-top: 15px;
+  padding: 3px 7px 2px;
+  border: 1px solid #999;
+  border-radius: 3px;
+  background: #eee;
+  color: #111;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.changeImage:hover {
+  background: #e1e1e1;
 }

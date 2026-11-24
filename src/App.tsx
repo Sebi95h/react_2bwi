@@ -2,34 +2,39 @@ import styles from "./App.module.css";
 import Card from "./components/Card";
 import Card2 from "./components/Card2";
 import Card3 from "./components/Card3";
-import CardCountdown from "./components/CardCountdown";
-import Card_Countdown from "./components/CardCountdown";
+
 function App() {
   return (
-    <>
-      <div className={styles.cardcontainer}>
-        <CardCountdown
-          title="Countdown"
-          text="Click to decrease"
-          image="https://via.placeholder.com/300"
-        />
-        <Card
-          title="Handball"
-          text="Bench Player"
-          image="https://i0.wp.com/hsggraz.at/wp-content/uploads/2026/09/Belos-Nemanja.png?w=700&ssl=1"
-        />
-        <Card2
-          title="Basketball"
-          text="Start Spieler"
-          image="https://cdn.britannica.com/09/188709-050-03BF34CB/Michael-Jordan.jpg"
-        />
-        <Card3
-          title="Volleyball"
-          text="Best Player"
-          image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVH0JvXEcMWnUUz5udnaSdMr1-wzq2NZ6992DOVROe9b90g-QoX08dKqtN&s=10"
-        />
-      </div>
-    </>
+    <main className={styles.page}>
+      <header className={styles.header}>
+        <h1>Test Heading</h1>
+        <span className={styles.logo}>Logo</span>
+      </header>
+
+      <section className={styles.content} aria-label="Menu">
+        <h2 className={styles.menuTitle}>Menu</h2>
+        <div className={styles.cardcontainer}>
+          <Card
+            title="peter"
+            text="Das ist Peter"
+            image="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=600&q=85"
+            alternateImage="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=600&q=85"
+          />
+          <Card2
+            title="susi"
+            text="super susi"
+            image="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=600&q=85"
+            alternateImage="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=600&q=85"
+          />
+          <Card3
+            title="paul"
+            text="super paul"
+            image="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=85"
+            alternateImage="https://images.unsplash.com/photo-1476673160081-cf065607f449?auto=format&fit=crop&w=600&q=85"
+          />
+        </div>
+      </section>
+    </main>
   );
 }
 
